@@ -1,0 +1,31 @@
+Data Structures 개념
+- 자료의 값들
+- 자료들간의 관계
+- 자료에 가해질수 있는 operation도 포함. ex) 허재필 -> 김재명으로 변경 = 값이 변경됨
+
+Abstraction
+- 수많은 정보에서 자료를 파악하기 위한 핵심많을 남기는 것을 의미함.
+- Ex. 지도사진에서 지도 경로만로 추상화하는 것
+
+Fundamental data structures
+- primitive: 프로그래밍상에서 이미 제공하고 있는 자료형태
+- non-primitive: 우리가 정의 하는 것 ex. arrays, lists, trees, graphs
+
+Algorithm
+- instance: 어떤 특정 알고리즘에 입력되는 데이터
+- A correct algorithm
+ 1. 모든 가능한 인스턴스에 대해 정답을 내야 한다.
+ 2. 알고리즘이 반드시 종료 되어야한다.
+
+프로그램과 알고리즘은 완전히 같지 않다.
+
+프로그래밍을 잘한다 : 내가 이해한 것을 컴퓨터가 수행 가능하도록 코드를 짜는 것.
+
+Computational Thinking:
+1. 주어진 문제에 대해 abstraction 하는 것.
+2. 그리고 컴퓨터가 이해할 수 있는 해결 책을 만들고
+3. 이 해결책이 오른지 확인하는 것
+
+Topics of This course
+1. Fundamental data structures: array, list, graph etc...
+2. 알고리즘 분석
