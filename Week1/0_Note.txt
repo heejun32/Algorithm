@@ -4,8 +4,8 @@ Data Structures 개념
 - 자료에 가해질수 있는 operation도 포함. ex) 허재필 -> 김재명으로 변경 = 값이 변경됨
 
 Abstraction
-- 수많은 정보에서 자료를 파악하기 위한 핵심많을 남기는 것을 의미함.
-- Ex. 지도사진에서 지도 경로만로 추상화하는 것
+- 수많은 정보 속에서 특정 자료를 파악하기 위해 핵심많을 남기는 것을 의미함.
+- Ex. 인공위성 지도 사진에서 내가 원하는 것은 경로이기 때문에 경로 부분만 추상화 하는 것.
 
 Fundamental data structures
 - primitive: 프로그래밍상에서 이미 제공하고 있는 자료형태
@@ -23,7 +23,7 @@ Algorithm
 
 Computational Thinking:
 1. 주어진 문제에 대해 abstraction 하는 것.
-2. 그리고 컴퓨터가 이해할 수 있는 해결 책을 만들고
+2. 그리고 컴퓨터가 이해할 수 있는 해결책을 만들고
 3. 이 해결책이 오른지 확인하는 것
 
 Topics of This course
