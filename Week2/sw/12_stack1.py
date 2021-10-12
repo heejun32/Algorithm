@@ -45,10 +45,14 @@
 
 test_case = int(input())
 
+def df(N):
+    if N == 10:
+        return 1
+    if N == 20:
+        return 3
+    return df(N-10) + 2*df(N-20)
+
 for test in range(1, test_case + 1):
-    HEIGHT = 20         # 세로
-    WIDE = int(input()) # 가로
-
-    result = None
-
+    N = int(input()) # 가로
+    result = df(N)
     print(f"#{test} {result}")
