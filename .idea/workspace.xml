@@ -3,22 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6f19c46-1c6f-4da0-bd35-363631ebd865" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/0_Note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/0_Note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/10_string2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/10_string2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/11_string3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/11_string3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/12_stack1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/12_stack1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/1_min_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/1_min_max.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/2_bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/2_bus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/3_number_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/3_number_card.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/4_part_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/4_part_sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/5_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/5_colors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/6_subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/6_subset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/7_binary_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/7_binary_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/8_special_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/8_special_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/9_string1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/9_string1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week5/0_Note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week6/0_Note.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kochat/kochat" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
