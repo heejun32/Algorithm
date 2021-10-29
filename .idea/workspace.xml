@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f89c4f4c-36a9-4196-8775-0a4df1eef7e6" name="Changes" comment="" />
+    <list default="true" id="f89c4f4c-36a9-4196-8775-0a4df1eef7e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Data_Structures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Structures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Function_development.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/Function_development.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Printer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/Printer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/Stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Truck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/Truck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/10_string2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/10_string2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/11_string3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/11_string3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/12_stack1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/12_stack1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/13_stack2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/13_stack2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/14_stack3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/14_stack3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/1_min_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/1_min_max.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/2_bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/2_bus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/3_number_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/3_number_card.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/4_part_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/4_part_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/5_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/5_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/6_subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/6_subset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/7_binary_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/7_binary_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/8_special_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/8_special_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/sw/9_string1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/sw/9_string1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/0_Note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/0_Note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/The_Farthest_Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/The_Farthest_Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/0_Note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Week4/0_Note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week4/Target_Number.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week4/Target_Number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
