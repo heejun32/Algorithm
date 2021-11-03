@@ -34,4 +34,4 @@ print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], 
 
 # 문제 잘 못이해, 모든 티켓을 다써야 하기에 각 티켓으로 연결되어 있는 최대 경로를 다 방문해야함 DFS!
 # 풀이 초반 사전을 통해 그래프 경로를 생성하긴 했지만 이후 접근 방법에 대해서는 상당히 해맴...
-# 참조: https://gurumee92.tistory.com/165
+# 참고: https://gurumee92.tistory.com/165
