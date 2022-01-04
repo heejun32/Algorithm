@@ -2,7 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a34526-2c8f-4bcc-b373-726df15c0314" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Data_Structures_and_Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Structures_and_Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/Function_development.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/Function_development.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/Printer.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/Printer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/Stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/Truck.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/Truck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/10_string2.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/10_string2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/11_string3.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/11_string3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/12_stack1.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/12_stack1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/13_stack2.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/13_stack2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/14_stack3.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/14_stack3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/1_min_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/1_min_max.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/2_bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/2_bus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/3_number_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/3_number_card.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/4_part_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/4_part_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/5_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/5_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/6_subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/6_subset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/7_binary_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/7_binary_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/8_special_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/8_special_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0_Stack_Queue/sw/9_string1.py" beforeDir="false" afterPath="$PROJECT_DIR$/0_Stack_Queue/sw/9_string1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_Graph/0_Note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1_Graph/0_Note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_Graph/The_Farthest_Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Graph/The_Farthest_Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_DFS_BFS/0_Note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2_DFS_BFS/0_Note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_DFS_BFS/Network.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_DFS_BFS/Network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_DFS_BFS/Target_Number.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_DFS_BFS/Target_Number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_DFS_BFS/Travel_Path.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_DFS_BFS/Travel_Path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_DFS_BFS/Word_Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_DFS_BFS/Word_Change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_Sorting/Biggest_Number.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sorting/Biggest_Number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_Sorting/H_Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sorting/H_Index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_Sorting/Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sorting/Selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Binary_Search/Immigration.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Binary_Search/Immigration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Binary_Search/Stepping_stone.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Binary_Search/Stepping_stone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_Full_Search/0_Eaxm.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Full_Search/0_Eaxm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_Full_Search/1_Decimal.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Full_Search/1_Decimal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_Full_Search/2_Carpet.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Full_Search/2_Carpet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +58,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="20Roe0j1paX8kwygFhFp7VeqJid" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -30,7 +77,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bankmate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
