@@ -33,7 +33,6 @@ for i in range(1, N + 1):
     graph[i].sort()
 
 DFS(V)
-
 visit = [False] * (N + 1)
 print()
 BFS(V)
