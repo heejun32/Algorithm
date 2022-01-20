@@ -33,7 +33,7 @@ def merge(arr, first, midpoint, last):
         arr[i] = merge_arr[i - first]
 
 def merge_sort(arr, first, last):
-    if last - first <= 6:
+    if last - first <= 32:
         insertion_sort(arr, first, last)
     else:
         midpoint = (first + last) // 2
