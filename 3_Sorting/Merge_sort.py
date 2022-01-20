@@ -2,11 +2,11 @@ def insertion_sort(arr, start, end):    #in-place / stable
     for i in range(start + 1, end):
         key = arr[i]
         j = i - 1
+
         while j >= start and arr[j] > key:
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
-    return arr
 
 def merge(arr, first, midpoint, last):
     merge_arr = []
@@ -48,4 +48,5 @@ start = time.time()
 merge_sort(arr, 0, len(arr))
 end = time.time()
 
+print(arr)
 print(end - start)
