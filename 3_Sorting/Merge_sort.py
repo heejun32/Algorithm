@@ -41,8 +41,8 @@ def merge_sort(arr, first, last):
         merge_sort(arr, midpoint, last)
         merge(arr, first, midpoint, last)
 
-arr = [i for i in range(100000, 0, - 1)]
-# arr = [1, 0]
+# arr = [i for i in range(1000000, 0, - 1)]
+arr = [i for i in range(100_000, 0, -1)]
 import time
 start = time.time()
 merge_sort(arr, 0, len(arr))
@@ -50,3 +50,5 @@ end = time.time()
 
 print(arr)
 print(end - start)
+
+
