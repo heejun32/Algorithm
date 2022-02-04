@@ -7,3 +7,4 @@
 1. 백준 merge sort tree 풀기
 2. heap 자료구조 및 정렬 documnet 참고해서 구현하기
 3. quick_sort 구현하기
+4. dp 부분 복습할 때 행렬곱 다시 공부
