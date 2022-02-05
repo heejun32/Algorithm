@@ -2,11 +2,12 @@ import sys
 import heapq
 input = sys.stdin.readline
 
-# 작은 값들 중 제일 큰 값 < 큰 값들 중 제일 작은 값 = 중간 값
+# 작은 값들 중 제일 큰 값 <= 중간값 <=  큰 값들 중 제일 작은 값
 
 N = int(input())
 left_heap = []
 right_heap = []
+
 for _ in range(N):
     number = int(input())
     if len(left_heap) == len(right_heap):
