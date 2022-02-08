@@ -2,10 +2,10 @@ import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-N_list = list(map(int, input().split()))
-N_list.insert(0, 0)
-acc_list = [0] * (N + 1)
+N_list = [0]
+N_list += list(map(int, input().split()))
 # 누적합 리스트 생성
+acc_list = [0] * (N + 1)
 
 # print(N_list)
 for i in range(1, N + 1):
@@ -17,10 +17,8 @@ for _ in range(M):
 
     if i == j:
         print(N_list[i])
-    
-    elif i == 1:
-        print(acc_list[j])
-    
+    # elif i == 1:
+    #     print(acc_list[j])
     else:
         i -= 1
         print(acc_list[j]-acc_list[i])
