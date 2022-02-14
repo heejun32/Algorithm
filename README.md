@@ -4,8 +4,7 @@
 학습 내용: 강의를 통한 자료구조와 알고리즘 이론 복습(현재 2회독중) 및 백준 실전 문제 풀이
 
 2회독 계획 (DP, BFS, Heap(Quick), Merge, Brute_Force)
-0. BFS 복습 후 
-1. Merge 복습 후 백준 7469 도전 
+1. Merge 복습 후 백준 7469 도전
 2. heap_sort는 documnet 참고해서 구현 및 문제풀이
 3. quick_sort 구현만 이후 분할정복 풀기
 4. dp 부분 복습할 때 행렬곱 다시 공부 - 완료
