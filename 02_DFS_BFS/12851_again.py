@@ -2,7 +2,7 @@ from collections import deque
 import sys
 input = sys.stdin.readline
 MAX = 10 ** 5
-BORAD = [[-1, 0] for _ in range(MAX + 1)]    # 동생을 찾는 가장 빠른 시간, 경우의 수
+BORAD = [[-1, 0] for _ in range(MAX + 1)]    # [동생을 찾는 가장 빠른 시간, 경우의 수]
 
 def bfs(N):
     queue = deque()
@@ -19,6 +19,7 @@ def bfs(N):
                     BORAD[dx][0] = BORAD[x][0] + 1  # 걸린 시간 저장
                     BORAD[dx][1] = BORAD[x][1]      # 경우의 수 저장
                     queue.append(dx)
+                    
                 elif BORAD[dx][0] == BORAD[x][0] + 1:   # 처음 방문한게 아니면
                     BORAD[dx][1] += BORAD[x][1]         # 새 경우의 수 더하기
 
