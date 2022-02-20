@@ -20,7 +20,7 @@ def bfs(N):
                     BORAD[dx][1] = BORAD[x][1]      # 경우의 수 저장
                     queue.append(dx)
                     
-                elif BORAD[dx][0] == BORAD[x][0] + 1:   # 처음 방문한게 아니면
+                elif BORAD[dx][0] == BORAD[x][0] + 1:   # 처음 방문한게 아니고 가장 빠른 시간의 경우면
                     BORAD[dx][1] += BORAD[x][1]         # 새 경우의 수 더하기
 
 N, K = map(int, input().split())
@@ -30,5 +30,5 @@ print(BORAD[K][0])
 print(BORAD[K][1])
 
 # 왜 초기 1차원 배열 값이 -1, 0 인가? 0 -> 0으로 가면 0초, 경우의 수는 1가지
-# 노드에 처음 방문한게 아니라면? 이전 새 경우의 수를 발견
+# 노드에 처음 방문한게 아니라면? 이전 경우의 수에 + 1
 # https://velog.io/@dhelee/%EB%B0%B1%EC%A4%80-12851%EB%B2%88-%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%884-Python-%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89BFS
