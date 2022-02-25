@@ -3,12 +3,13 @@ import sys
 input = sys.stdin.readline
 queue = deque()
 
+
 def bfs(V, E, R):
     V[R][0] = True
     V[R][1] = 1
     order = 1
     queue.append(E[R])
-    
+
     while queue:
         u = queue.popleft()
         u.sort()
@@ -24,9 +25,8 @@ def bfs(V, E, R):
 
 
 N, M, R = map(int, input().split())
-E =[[] for _ in range(N + 1)]
-V =[[False, 0] for _ in range(N + 1)]
-
+E = [[] for _ in range(N + 1)]
+V = [[False, 0] for _ in range(N + 1)]
 for i in range(1, M + 1):
     u, v = map(int, input().split())
     E[u].append(v)
