@@ -15,3 +15,6 @@ for i in range(1, 2 ** 31):
         else:
             heapq.heappop(heap)
             N -= 1
+    else:
+        print(i)
+        break
