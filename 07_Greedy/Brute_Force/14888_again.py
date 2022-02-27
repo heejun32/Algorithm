@@ -5,15 +5,15 @@ N = int(input())
 A = list(map(int, input().split()))
 O = list(map(int, input().split()))
 
-MAXIMUM = -1e9
-MINIMUM = 1e9
+MAXIMUM = -1e9  # 최댓값 비교를 위해 문제 범위에서 가장 작은수
+MINIMUM = 1e9   # 최솟값 비교를 위해 문제 범위에서 가장 작은수
+
 
 def dfs(depth, total, plus, minus, multiply, divide):
     global MAXIMUM, MINIMUM
     if depth == N:
         MAXIMUM = max(total, MAXIMUM)
         MINIMUM = min(total, MINIMUM)
-        return
 
     if plus:
         dfs(depth + 1, total + A[depth], plus - 1, minus, multiply, divide)

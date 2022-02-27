@@ -5,9 +5,9 @@
 
 현재: 코딩 테스트 합격을 위해 자주 출제되는 해당 알고리즘들의 문제를 집중적으로 푸는중.
 22.02.25 ~ flake8을 사용해 코딩 스타일도 지속적으로 개선해나갈 예정.
-1. Parsing
+1. Burute Force
 2. Simulation
-3. Burute Force
-4. BFS
+3. BFS
+4. Parsing
 5. Dynamic Programming
 6. Binary Search
