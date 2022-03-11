@@ -18,3 +18,4 @@ for i in range(9):
     #  중복 반복문을 빠져나오는 조건을 추가로 생각해주기
     if len(dwarfs) < 9:
         break
+ 
