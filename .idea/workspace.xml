@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a34526-2c8f-4bcc-b373-726df15c0314" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Data_Structures_and_Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Structures_and_Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00_Stack_Queue/1874.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Stack_Queue/1874.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Graph/0_Note.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Graph/Ranking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Graph/The_Farthest_Node.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_DFS_BFS/24445.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_DFS_BFS/24445.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_DFS_BFS/24447.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_DFS_BFS/24447.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Sorting/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_Sorting/merge_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_MST/1197.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

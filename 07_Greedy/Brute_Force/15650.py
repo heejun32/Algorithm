@@ -1,3 +1,4 @@
+# flake8 코드 스타일이 적용되어 있습니다.
 import sys
 input = sys.stdin.readline
 

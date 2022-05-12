@@ -1,7 +1,9 @@
+# flake8 코드 스타일이 적용되어 있습니다.
 from collections import deque
 import sys
 input = sys.stdin.readline
 queue = deque()
+
 
 # bfs 함수
 def bfs(V, E, R, D, O):
@@ -11,13 +13,13 @@ def bfs(V, E, R, D, O):
     depth = 0
     order = 1
     queue.append(E[R])
-    
+
     while queue:
         depth += 1
 
         for _ in range(len(queue)):
             u = queue.popleft()
-            u.sort()    # 오름차순 방문 설정 
+            u.sort()  # 오름차순 방문 설정
             for edge in u:
                 if V[edge] == 0:
                     order += 1
@@ -47,5 +49,3 @@ answer = 0
 for i in range(1, N + 1):
     answer += D[i] * O[i]
 print(answer)
-# print(O)
-# print(D)

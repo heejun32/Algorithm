@@ -3,18 +3,15 @@ import sys
 input = sys.stdin.readline
 queue = deque()
 
+
 def bfs(V, E, R, D):
-    V[R] = 1        # 방문 확인
+    V[R] = 1
     D[R] = 0
     depth = 0
     queue.append(E[R])
-    
+
     while queue:
         depth += 1
-        # i = 1
-        # print(f'{i}회차')
-        # print('depth : ', depth)
-        # print('queue : ', queue)
         for _ in range(len(queue)):
             u = queue.popleft()
             for edge in u:
@@ -22,7 +19,6 @@ def bfs(V, E, R, D):
                     V[edge] = 1
                     D[edge] = depth
                     queue.append(E[edge])
-        # i += 1
 
 N, M, R = map(int, input().split())
 E =[[] for _ in range(N + 1)]

@@ -1,8 +1,10 @@
+# flake8 코드 스타일이 적용되어 있습니다.
 N = int(input())    # 컴퓨터(노드)의 수
 K = int(input())    # 간선의 수
 
 graph = [[] for _ in range(N + 1)]   # 노드의 정보를 담을 그래프 선언
 visit = [False] * (N + 1)
+
 
 def DFS(graph, visit):
     stack = []
