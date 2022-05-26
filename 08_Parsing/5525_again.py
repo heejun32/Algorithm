@@ -1,22 +1,22 @@
 import sys
 input = sys.stdin.readline
 
-N = int(input())
-M = int(input())
-S = input().strip()
-answer = 0
+# N = int(input())
+# M = int(input())
+# S = input().strip()
+# answer = 0
 
-# 기본 시작은 IOI,
-std = "IOI"
-for i in range(N - 1):  # N이 1씩 늘어날때마다 + OI를 붙여주면 됨
-    std += "OI"
+# # 기본 시작은 IOI,
+# std = "IOI"
+# for i in range(N - 1):  # N이 1씩 늘어날때마다 + OI를 붙여주면 됨
+#     std += "OI"
 
-length = len(std)
-for j in range(M - length):
-    if std == S[j: j + length]:
-        answer += 1
+# length = len(std)
+# for j in range(M - length):
+#     if std == S[j: j + length]:
+#         answer += 1
 
-print(answer)
+# print(answer)
 
 
 N = int(input())
@@ -39,6 +39,5 @@ while i < M - 1:
         pattern = 0
 
 print(count)
-
 
 # 참고 사이트: https://black-hair.tistory.com/135
