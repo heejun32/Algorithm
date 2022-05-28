@@ -10,7 +10,7 @@ answer = 0
 while low <= high:
     total = 0
     middle = (low + high) // 2
-    for i in range(len(LINE)):
+    for i in range(N):
         rest = LINE[i] - middle
         if rest > 0:
             total += rest
