@@ -22,7 +22,7 @@ for _ in range(T):
             visited[oper_result] = True
             queue.append([oper_result, oper + 'D'])
 
-        # L 연산
+        # S 연산
         oper_result = (number - 1) % 10000
         if not visited[oper_result]:
             visited[oper_result] = True
