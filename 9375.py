@@ -13,5 +13,4 @@ for _ in range(t):
     cloths_list = list(cloths.values())
     for i in range(len(cloths_list)):
         answer *= cloths_list[i]
-
     print(answer - 1)
