@@ -8,5 +8,4 @@ class Solution:
                 dp[i] = max(dp[i - 1], prices[i] - cheapest)
             else:
                 dp[i] = dp[i - 1]
-
         return dp[-1]
