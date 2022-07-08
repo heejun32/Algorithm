@@ -4,7 +4,7 @@
 학습 기간: 2021.08~2021.12  
 학습 내용: 강의를 통한 자료구조와 알고리즘 이론 학습 및 백준 실전 문제 풀이
 
-# Coding Test
+# Algorithm 및 Coding Test 공부
 교재: 파이썬 알고리즘 인터뷰  
-학습 내용: 코딩 테스트를 위한 자료구조와 알고리즘  
-문제 풀이: leetecode, programmers, BOJ,
+학습 내용: 코딩 테스트를 위한 자료구조와 알고리즘 학습  
+문제 풀이 사이트: LeetCode, Programmers, BackJoon
