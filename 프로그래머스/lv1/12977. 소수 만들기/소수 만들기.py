@@ -1,11 +1,9 @@
 from itertools import combinations
 
 
-def isprime(num : int) -> bool:
-    # 1이면 반환
-    if num == 1:
+def is_prime(num):
+    if num < 2:
         return False
-    # 1이 아니면 탐색 시작
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
             return False
@@ -14,9 +12,8 @@ def isprime(num : int) -> bool:
 
 def solution(nums):
     answer = 0
-    combs = list(combinations(nums, 3))
-    for comb in combs:
-        if isprime(sum(comb)):
+    comb_nums = combinations(nums, 3)
+    for comb_num in comb_nums:
+        if is_prime(sum(comb_num)):
             answer += 1
     return answer
-
