@@ -11,5 +11,4 @@ class Solution:
         answer = []        
         for _ in range(k):
             answer.append(heapq.heappop(freqs_heap)[1])
-
         return answer
