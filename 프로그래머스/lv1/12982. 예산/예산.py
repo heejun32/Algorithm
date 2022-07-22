@@ -5,5 +5,7 @@ def solution(d, budget):
         if budget - i >= 0:
             answer += 1
             budget -= i
+        else:
+            break
             
     return answer
