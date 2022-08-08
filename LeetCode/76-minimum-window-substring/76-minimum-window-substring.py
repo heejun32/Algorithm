@@ -5,8 +5,10 @@ class Solution(object):
         left = start = end = 0
         
         for right, char in enumerate(s, 1):
-            missing -= need[char] > 0
+            if need[char] > 0:
+                missing -= 1
             need[char] -= 1
+            # print(need)
                 
             if missing == 0:
                 while left <right and need[s[left]] < 0:
