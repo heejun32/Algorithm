@@ -1,18 +1,16 @@
-class Solution(object):
+class Solution:
     def maxSlidingWindow(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: List[int]
-        """
-        res, deque = [], collections.deque()
+        results = []
+        # queue[0]에는 매 윈도우마다 가장 큰 값의 인데스만 저장!
+        queue = collections.deque()
         for i in range(len(nums)):
-            while deque and deque[0] <= i-k:
-                deque.popleft()
-            while deque and nums[deque[-1]] <= nums[i]:
-                deque.pop()
-            deque.append(i)
-            res.append(nums[deque[0]])
+            # 인덱스 k 만큼 유지
+            if queue and queue[0] == i - k:
+                queue.popleft()
+            while queue and nums[queue[-1]] < nums[i]:
+                queue.pop()
             
-        
-        return res[k-1:]
+            queue.append(i)
+            results.append(nums[queue[0]])
+            # print(queue)
+        return results[k - 1:]
