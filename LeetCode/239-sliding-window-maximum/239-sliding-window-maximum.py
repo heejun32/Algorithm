@@ -1,3 +1,6 @@
+import collections
+
+
 class Solution:
     def maxSlidingWindow(self, nums, k):
         results = []
@@ -9,8 +12,15 @@ class Solution:
                 queue.popleft()
             while queue and nums[queue[-1]] < nums[i]:
                 queue.pop()
-            
+
             queue.append(i)
             results.append(nums[queue[0]])
-            # print(queue)
+
         return results[k - 1:]
+
+
+# nums = [1,3,1,2,0,5]
+# k = 3
+
+# sol = Solution()
+# print(sol.maxSlidingWindow(nums, k))
