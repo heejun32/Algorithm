@@ -1,5 +1,5 @@
 class Solution:
-    def diffWaysToCompute(self, input):
+    def diffWaysToCompute(self, expression):
         def compute(left, right, op):
             results = []
             for l in left:
@@ -7,14 +7,17 @@ class Solution:
                     results.append(eval(str(l) + op + str(r)))
             return results
 
-        if input.isdigit():
-            return [int(input)]
+        # 재귀 종료 조건
+        if expression.isdigit():
+            return [int(expression)]
 
+        # 재귀 탐색 시작
         results = []
-        for index, value in enumerate(input):
+        for index, value in enumerate(expression):
             if value in "-+*":
-                left = self.diffWaysToCompute(input[:index])
-                right = self.diffWaysToCompute(input[index + 1:])
+                left = self.diffWaysToCompute(expression[:index])
+                right = self.diffWaysToCompute(expression[index + 1:])
 
                 results.extend(compute(left, right, value))
+                # print(results)
         return results
