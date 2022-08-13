@@ -9,6 +9,5 @@ class Solution(object):
             rows = [1] * i
             for j in range(1, i - 1):
                 rows[j] = results[-1][j - 1] + results[-1][j]
-            results.append(rows)
-        
+            results.append(rows) 
         return results[-1]
