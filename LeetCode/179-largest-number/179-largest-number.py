@@ -1,15 +1,11 @@
-class Solution:
-    def to_swap(slef, n1: int, n2: int) -> bool:
-        return str(n1) + str(n2) < str(n2) + str(n1)
-    
-    def largestNumber(self, nums: List[int]) -> str:
-        i = 1
-        while i < len(nums):
-            j = i
-            while j > 0 and self.to_swap(nums[j - 1], nums[j]):
-                nums[j], nums[j - 1] = nums[j - 1], nums[j]
-                j -= 1
-            i += 1
+class Solution(object):
+    def largestNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: str
+        """
+        # 같은 자리의 숫자면 큰 수가, 아니라면 작은 수가 앞에 올수록 최종 숫자의 크기가 크다.
+        nums = list(map(str, nums))
+        nums.sort(key=lambda x: x * 9, reverse=True)
+        return str(int(''.join(nums)))
         
-        return str(int(''.join(map(str, nums))))
-                
