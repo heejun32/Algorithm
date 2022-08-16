@@ -1,15 +1,19 @@
 class Solution(object):
     def characterReplacement(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: int
+        """
+        # max(right) - max(left) - max_char_n = k 이면 정답
         left = 0
-        counts = collections.Counter()
+        counter = collections.Counter()
         for right in range(1, len(s) + 1):
-            counts[s[right - 1]] += 1
-            # 가장 흔하게 등장하는 문자 탐색
-            max_char_n = counts.most_common(1)[0][1]
+            counter[s[right - 1]] += 1
+            max_char_n = counter.most_common(1)[0][1]
             
-            # k 초과시 왼쪽 포인터 이동
             if right - left - max_char_n > k:
-                counts[s[left]] -= 1
+                counter[s[left]] -= 1
                 left += 1
-        
         return right - left
+            
