@@ -5,7 +5,6 @@ class Solution(object):
         :type cost: List[int]
         :rtype: int
         """
-        # 예외 처리
         if sum(gas) < sum(cost):
             return -1
         
@@ -16,4 +15,5 @@ class Solution(object):
                 fuel = 0
             else:
                 fuel += gas[i] - cost[i]
+        
         return start
