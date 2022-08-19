@@ -1,26 +1,24 @@
 import collections
 
 
-class Solution:
+class Solution(object):
     def maxSlidingWindow(self, nums, k):
-        results = []
-        # queue[0]에는 매 윈도우마다 가장 큰 값의 인데스만 저장!
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
         queue = collections.deque()
-        for i in range(len(nums)):
-            # 인덱스 k 만큼 유지
-            if queue and queue[0] == i - k:
+        result = []
+        for index, value in enumerate(nums):
+            # print("queue {0}".format(queue))
+            # print("result {0}".format(result))
+
+            if queue and index - queue[0] == k:
                 queue.popleft()
-            while queue and nums[queue[-1]] < nums[i]:
+            while queue and nums[queue[-1]] < value:
                 queue.pop()
-
-            queue.append(i)
-            results.append(nums[queue[0]])
-
-        return results[k - 1:]
-
-
-# nums = [1,3,1,2,0,5]
-# k = 3
-
-# sol = Solution()
-# print(sol.maxSlidingWindow(nums, k))
+            
+            queue.append(index)
+            result.append(nums[queue[0]])
+        return result[k - 1:]
