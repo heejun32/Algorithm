@@ -31,6 +31,7 @@ class Solution(object):
                     while left < right and nums[right] == nums[right - 1]:
                         right -= 1
                     
+                    # 다음 숫자로 넘어가기
                     left += 1
                     right -= 1
                     
