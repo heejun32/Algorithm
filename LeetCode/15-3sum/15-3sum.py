@@ -1,30 +1,38 @@
-class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        answer = []
-        nums.sort()
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
         
+        results = []
+        
+        # 정렬
+        nums.sort()
         for i in range(len(nums) - 2):
-            
-            # pass the duplicated values
-            if i > 0 and nums[i - 1] == nums[i]:
+            # 중복 값 건너뛰기
+            if i > 0 and nums[i] == nums[i - 1]:
                 continue
-            
-            # two pointer
+                
             left, right = i + 1, len(nums) - 1
             while left < right:
-                if nums[i] + nums[left] + nums[right] < 0:
+                three_sum = nums[i] + nums[left] + nums[right]
+                
+                if three_sum < 0:
                     left += 1
-                elif nums[i] + nums[left] + nums[right] > 0:
+                elif three_sum > 0:
                     right -= 1
                 else:
-                    answer.append([nums[i], nums[left], nums[right]])
+                    results.append([nums[i], nums[left], nums[right]])
                     
-                    # pass the duplicated values
+                    # left, right 중복 값 건너뛰기
                     while left < right and nums[left] == nums[left + 1]:
                         left += 1
                     while left < right and nums[right] == nums[right - 1]:
                         right -= 1
+                    
                     left += 1
                     right -= 1
-            
-        return answer
+                    
+        
+        return results
