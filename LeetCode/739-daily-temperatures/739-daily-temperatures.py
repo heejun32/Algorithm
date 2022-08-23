@@ -1,14 +1,16 @@
-class Solution:
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        answer = [0] * len(temperatures)
+class Solution(object):
+    def dailyTemperatures(self, t):
+        """
+        :type temperatures: List[int]
+        :rtype: List[int]
+        """
+        answer = [0] * len(t)
         stack = []
-        
-        for i, current in enumerate(temperatures):
-            # 현재 온도가 스택 값보다 높다면 정답 처리
-            while stack and current > temperatures[stack[-1]]:
+        for i, cur in enumerate(t):
+            while stack and cur > t[stack[-1]]:
                 last = stack.pop()
                 answer[last] = i - last
             stack.append(i)
-        
-        return answer
             
+        return answer
+                
