@@ -1,14 +1,19 @@
-class Solution:
-    def isValid(self, s: str) -> bool:
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        brackets = {')': '(', '}': '{', ']': '['}
         stack = []
-        parentheses = {'(': ')', '[': ']', '{': '}'}
-        for char in s:
-            if char in parentheses:
-                stack.append(char)
-            else:
-                if not stack or parentheses[stack.pop()] != char:
-                    return False
         
+        for character in s:
+            if stack and character in brackets:
+                if brackets[character] != stack[-1]:
+                    return False
+                else:
+                    stack.pop()
+                    continue
+            stack.append(character)
+    
         return len(stack) == 0
-    # O(n)
-    # 공간복잡도 n: s의 길이, k: 괄호의 종류 => O(n + k)
