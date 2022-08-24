@@ -1,13 +1,19 @@
-class Solution:
+class Solution(object):
     def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
         used = {}
-        left = max_length = 0
+        max_length = start = 0
         
-        for right, char in enumerate(s):
-            if char in used and left <= used[char]:
-                left = used[char] + 1
+        for idx, char in enumerate(s):
+            
+            if char in used and start <= used[char]:
+                start = used[char] + 1
             else:
-                max_length = max(max_length, right - left + 1)
-            used[char] = right
-        
+                max_length = max(max_length, idx - start + 1)
+            
+            used[char] = idx
+            
         return max_length
