@@ -1,15 +1,21 @@
+import collections
+
+
 class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
-        graph = collections.defaultdict(list)
-        # 그래프 구성
-        for a, b in sorted(tickets, reverse=True):
-            graph[a].append(b)
         
-        route = []
-        def dfs(a):
-            while graph[a]:
-                dfs(graph[a].pop())
-            route.append(a)
-            
+        def dfs(start):
+            while graph[start]:
+                dfs(graph[start].pop())
+            rount.append(start)
+                
+        
+        # {출발지: [도착지1, 도착지2, ...]} 저장
+        graph = collections.defaultdict(list)
+        for depart, arrive in sorted(tickets, reverse=True):
+            graph[depart].append(arrive)
+ 
+        rount = []
         dfs('JFK')
-        return route[::-1]
+        return rount[::-1]
+        
