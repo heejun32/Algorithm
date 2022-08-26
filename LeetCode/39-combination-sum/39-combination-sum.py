@@ -1,20 +1,16 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        def dfs(comb, idx):
-            # 초과 발생시 종료
-            if sum(comb) > target:
-                return
-            # 조건 충족시 종료
-            if sum(comb) == target:
-                results.append(comb)
-                return
+        def dfs(csum, index, path):
+            if csum < 0:
+                return None
+            if csum == 0:
+                results.append(path)
             
-            for i in range(idx, len(candidates)):
-                comb.append(candidates[i])
-                dfs(comb[:], i)
-                comb.pop()
-            return
+            
+            for i in range(index, len(candidates)):
+                dfs(csum - candidates[i], i, path + [candidates[i]])
         
         results = []
-        dfs([], 0)
+        dfs(target, 0, [])
+        
         return results
