@@ -1,3 +1,6 @@
+import collections
+
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -6,21 +9,22 @@
 #         self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        # Exception processing
+        # exception
         if root is None:
             return 0
-        # 변수 선언
         queue = collections.deque([root])
         depth = 0
         
-        # BFS 반복
         while queue:
             depth += 1
+            # queue extaraction
             for _ in range(len(queue)):
                 cur_root = queue.popleft()
-                if cur_root.left:
-                    queue.append(cur_root.left)
+                
                 if cur_root.right:
                     queue.append(cur_root.right)
-        # 결과 반환
-        return depth
+                if cur_root.left:
+                    queue.append(cur_root.left)
+
+        # iteration BFS == depth
+        return depth        
