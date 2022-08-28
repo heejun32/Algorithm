@@ -1,9 +1,6 @@
 class Solution:
     def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
         def dfs(x, y):
-            # if board[x][y] != "E":
-            #     return None
-        
             # search near mine        
             count = 0
             for dx, dy in((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1), (x + 1, y + 1), (x + 1, y - 1), (x - 1, y + 1), (x - 1, y - 1)):
