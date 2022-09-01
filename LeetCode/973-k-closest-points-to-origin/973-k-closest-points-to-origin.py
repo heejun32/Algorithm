@@ -6,7 +6,10 @@ class Solution:
         heap = []
         for x, y in points:
             dist = (x - 0) ** 2 + (y - 0) ** 2
-            heapq.heappush(heap, (dist, x, y))
+            # heapq.heappush(heap, (dist, x, y))
+            heap.append((dist, x, y))
+        
+        heapq.heapify(heap)
         
         results = []
         for _ in range(k):
