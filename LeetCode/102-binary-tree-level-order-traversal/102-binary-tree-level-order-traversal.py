@@ -9,19 +9,23 @@ import collections
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        queue = collections.deque([root])
-        order = []
+        # exception
+        if not root:
+            return []
         
+        queue = collections.deque([root])
+        results = []
         while queue:
-            level = []
+            levels = []
             for _ in range(len(queue)):
                 node = queue.popleft()
-                if node:  
+                if node.left:
                     queue.append(node.left)
+                if node.right:
                     queue.append(node.right)
-                    level.append(node.val)
-            
-            if level:
-                order.append(level)
-            
-        return order
+                
+                # 같은 레벨의 노드 저장
+                levels.append(node.val)
+            results.append(levels)
+        
+        return results
