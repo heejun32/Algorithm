@@ -1,3 +1,6 @@
+import collections
+
+
 """
 # Definition for a Node.
 class Node:
@@ -8,21 +11,22 @@ class Node:
 
 class Solution:
     def cloneGraph(self, node: 'Node') -> 'Node':
-        # 중복 탐색 방지
-        seen = {}
+        # exception
+        if not node:
+            return node
         
-        def clone(node):
-            if not node:
-                return None
-            
-            if node.val in seen:
-                return seen[node.val]
-            
-            seen[node.val] = Node(node.val)
-            
-            for neighbor in node.neighbors:
-                seen[node.val].neighbors.append(clone(neighbor))
-            
-            return seen[node.val]
+        queue = collections.deque([node])
+        clones = {node.val : Node(node.val, [])}
         
-        return clone(node)
+        while queue:
+            cur = queue.popleft()
+            cur_clone = clones[cur.val]
+            
+            for neighbor in cur.neighbors:
+                if neighbor.val not in clones:
+                    clones[neighbor.val] = Node(neighbor.val, [])
+                    queue.append(neighbor)
+                    
+                cur_clone.neighbors.append(clones[neighbor.val])
+                
+        return clones[node.val]
