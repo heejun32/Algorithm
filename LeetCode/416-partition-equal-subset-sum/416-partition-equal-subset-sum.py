@@ -6,8 +6,7 @@ class Solution:
     
         target = total // 2
         
-        dp = [False] * (target + 1)
-        dp[0] = True
+        dp = [True] + [False] * target
         
         for num in nums:
             for i in range(len(dp) -1, num - 1, -1):
