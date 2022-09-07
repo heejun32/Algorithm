@@ -8,7 +8,6 @@ class Solution:
             else:
                 return True
         
-        
         stack = []
         
         for token in tokens:
@@ -21,4 +20,4 @@ class Solution:
                 stack.append(temp)
             # print(stack)
             
-        return int(stack[-1])
+        return stack[-1]
