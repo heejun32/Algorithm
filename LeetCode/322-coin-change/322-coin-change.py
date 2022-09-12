@@ -1,5 +1,10 @@
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
+        '''
+        Time Complexity is O(N * K) N is amount, K is coins
+        Space Complexity is O(N)
+        
+        '''
         dp = [0] + [-1] * (amount)
         
         for target in range(amount + 1):
