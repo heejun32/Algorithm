@@ -4,8 +4,8 @@ import collections
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         '''
-        Time Complexity is O(N^2)
-        Space Complexity is O(N) 
+        Time Complexity is O(V + E)
+        Space Complexity is O(V + E) 
         
         '''
         
