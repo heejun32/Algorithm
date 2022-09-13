@@ -1,19 +1,20 @@
-class Solution(object):
-    def productExceptSelf(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        '''
+        Time Complexity is O(N)
+        Space Complexity is O(N)
+        '''
         
-        out = []
+        answer = []
+        
         p = 1
         for i in range(len(nums)):
-            out.append(p)
-            p = p * nums[i]
+            answer.append(p)
+            p *= nums[i]
         
         p = 1
         for i in range(len(nums) - 1, -1, -1):
-            out[i] = out[i] * p
-            p = p * nums[i]
-        
-        return out
+            answer[i] *= p
+            p *= nums[i]
+            
+        return answer
