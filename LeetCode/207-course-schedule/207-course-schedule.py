@@ -3,34 +3,33 @@ import collections
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        
-        # make graph
-        graph = collections.defaultdict(list)
-        for x, y in prerequisites:
-            graph[x].append(y)
-        
-        traced = set()
-        visit = set()
-        
-        def dfs(i):
-            # if cyclic, return False
-            if i in traced:
+        def dfs(a):
+            if a in traced:
                 return False
-            if i in visit:
+            if a in visited:
                 return True
             
-            traced.add(i)
-            for y in graph[i]:
-                if not dfs(y):
+            traced.add(a)
+
+            for b in graph[a]:
+                if not dfs(b):
                     return False
-            
-            traced.remove(i)
-            visit.add(i)
+            traced.remove(a)
+            visited.add(a)
             
             return True
         
-        for x in list(graph):
-            if not dfs(x):
+        graph = collections.defaultdict(list)
+        for a, b in prerequisites:
+            graph[a].append(b)
+        
+        traced = set()
+        visited = set()
+        
+        # chek the cyclic
+        for a in list(graph):
+            if not dfs(a):
                 return False
             
         return True
+        
