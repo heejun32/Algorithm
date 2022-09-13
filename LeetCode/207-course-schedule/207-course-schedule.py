@@ -3,6 +3,13 @@ import collections
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        '''
+        Time Complexity is O()
+        Space Complexity is O(N) 
+        
+        '''
+        
+        
         def dfs(a):
             if a in traced:
                 return False
