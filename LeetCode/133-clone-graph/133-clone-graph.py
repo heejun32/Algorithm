@@ -1,3 +1,6 @@
+import collections
+
+
 """
 # Definition for a Node.
 class Node:
@@ -11,20 +14,19 @@ class Solution:
         # exception
         if not node:
             return node
+    
+        queue = collections.deque([node])
+        clone = {node.val: Node(node.val)}
         
-        clones = dict()
-        
-        def dfs(node):
-            if node not in clones:
-                clones[node.val] = Node(node.val, [])
+        while queue:
+            cur_node = queue.popleft()
+            cur_clone = clone[cur_node.val]
+            
+            for neighbor in cur_node.neighbors:
+                if neighbor.val not in clone:
+                    clone[neighbor.val] = Node(neighbor.val)
+                    queue.append(neighbor)
                 
-                for neighbor in node.neighbors:
-                    if neighbor.val not in clones:
-                        dfs(neighbor)
-                    clones[node.val].neighbors.append(clones[neighbor.val])
-            
-            return None
-        
-        dfs(node)
-        return clones[node.val]
-            
+                cur_clone.neighbors.append(clone[neighbor.val])
+                
+        return clone[node.val]
