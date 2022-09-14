@@ -8,7 +8,8 @@ class Solution:
             dfs(x - 1, y)
             dfs(x, y + 1)
             dfs(x, y - 1)
-        
+            
+            return None
         
         m, n = len(grid), len(grid[0])
         islands = 0
@@ -17,5 +18,5 @@ class Solution:
                 if grid[x][y] == "1":
                     dfs(x, y)
                     islands += 1
-        print(grid)
+    
         return islands
