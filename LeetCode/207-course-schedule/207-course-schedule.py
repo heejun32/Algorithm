@@ -9,7 +9,6 @@ class Solution:
         
         '''
         
-        
         def dfs(a):
             if a in traced:
                 return False
@@ -17,13 +16,12 @@ class Solution:
                 return True
             
             traced.add(a)
-
             for b in graph[a]:
                 if not dfs(b):
                     return False
             traced.remove(a)
             visited.add(a)
-            
+    
             return True
         
         graph = collections.defaultdict(list)
@@ -32,7 +30,7 @@ class Solution:
         
         traced = set()
         visited = set()
-        
+    
         # chek the cyclic
         for a in list(graph):
             if not dfs(a):
