@@ -3,6 +3,11 @@ import collections
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        '''
+        Time Complexity is O(N + E)
+        Space Complexity is O(N + E)
+        
+        '''
         graph = collections.defaultdict(list)
         queue = collections.deque()
         indegree = [0] * numCourses
