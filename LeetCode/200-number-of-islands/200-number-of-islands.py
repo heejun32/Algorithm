@@ -1,5 +1,13 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
+        '''
+        Time Complexity is O(MN)
+        Space Compexity is O(MN)
+        
+        '''
+        
+        
+        
         def dfs(x, y):
             if x < 0 or x >= m or y < 0 or y >= n or grid[x][y] == "0":
                 return None
