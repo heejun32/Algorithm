@@ -5,9 +5,6 @@ class Solution:
         Space Compexity is O(MN)
         
         '''
-        
-        
-        
         def dfs(x, y):
             if x < 0 or x >= m or y < 0 or y >= n or grid[x][y] == "0":
                 return None
