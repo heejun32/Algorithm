@@ -13,7 +13,8 @@ class Solution:
             if not fo:
                 return 0
                 
-            time = -1
+            time = 0
+            
             while ro:
                 # search the same level
                 for _ in range(len(ro)):
@@ -24,7 +25,9 @@ class Solution:
                             fo -= 1
                             grid[dx][dy] = 2
                             ro.append([dx, dy])
-                time += 1
+                            
+                if ro:
+                    time += 1
             return time if not fo else -1
         
         # initialize the parameters: m, n, fresh_oranges, rotten_oranges
