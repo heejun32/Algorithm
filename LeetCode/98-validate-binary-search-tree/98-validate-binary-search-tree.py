@@ -8,7 +8,6 @@
 
 class Solution:
     def isValidBST(self, root: Optional[TreeNode], min_value = float('-inf'), max_value = float('inf') ) -> bool:
-        
         if not root:
             return True
         
