@@ -7,6 +7,10 @@
 
 
 class Solution:
+    '''
+    Time Complexity is O(N)
+    Space Complexity is O(N)
+    '''
     def isValidBST(self, root: Optional[TreeNode], min_value = float('-inf'), max_value = float('inf') ) -> bool:
         if not root:
             return True
