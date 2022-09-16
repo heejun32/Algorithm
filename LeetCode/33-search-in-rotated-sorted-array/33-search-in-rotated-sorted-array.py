@@ -1,6 +1,6 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        # finding pivot
+        # find the pivot
         left, right = 0, len(nums) - 1
         while left < right:
             mid = left + (right - left) // 2
@@ -12,7 +12,7 @@ class Solution:
                 
         pivot = left
         
-        # finding target
+        # find the target
         left, right = 0, len(nums) - 1
         while left <= right:
             mid = left + (right - left) // 2
