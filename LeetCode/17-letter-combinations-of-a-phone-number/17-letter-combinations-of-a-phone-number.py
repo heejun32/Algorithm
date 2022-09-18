@@ -1,4 +1,10 @@
 class Solution:
+    '''
+    Time Complexity is O(NM)
+    Space Complexity is O(NM)
+    N is digits.lengh
+    M is digit's range
+    '''    
     def letterCombinations(self, digits: str) -> List[str]:
         # exception
         if not digits:
