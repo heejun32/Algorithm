@@ -4,7 +4,7 @@ class Solution:
         volume = min(height[left], height[right]) * abs(left - right)
         
         while left < right:
-            if height[left] <= height[right]:
+            if height[left] < height[right]:
                 left += 1
             else:
                 right -= 1
