@@ -7,6 +7,7 @@ class Solution:
         volume = 0
         left, right = 0, len(height) - 1
         left_max, right_max = height[left], height[right]
+        
         while left < right:
             left_max, right_max = max(left_max, height[left]), max(right_max, height[right])
             if left_max <= right_max:
