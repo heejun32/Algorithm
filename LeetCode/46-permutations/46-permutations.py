@@ -1,4 +1,8 @@
 class Solution:
+    '''
+    Time Complexity is O(N!)
+    Space Complexity is O(N!)
+    ''' 
     def permute(self, nums: List[int]) -> List[List[int]]:
         def dfs(path):
             if len(path) == len(nums):
