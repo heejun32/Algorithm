@@ -11,7 +11,7 @@ def solution(queue1, queue2):
     cnt = 0
     
     # 종료 조건1
-    while q1 and q1 and cnt <= 3 * len(queue1):
+    while cnt <= 3 * len(queue1):
         # 종료 조건2: 정답을 찾은 경우
         if qsum_1 == qsum_2: 
             return cnt
