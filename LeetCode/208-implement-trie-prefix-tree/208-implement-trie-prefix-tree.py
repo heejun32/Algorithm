@@ -4,12 +4,12 @@ import collections
 class TrieNode:
     
     def __init__(self):
-        self.word = False
         self.children = collections.defaultdict(TrieNode)
+        self.word = False
 
 
 class Trie:
-    
+
     def __init__(self):
         self.root = TrieNode()
 
@@ -25,7 +25,7 @@ class Trie:
             if char not in node.children:
                 return False
             node = node.children[char]
-            
+        
         return node.word
 
     def startsWith(self, prefix: str) -> bool:
@@ -34,7 +34,7 @@ class Trie:
             if char not in node.children:
                 return False
             node = node.children[char]
-        
+
         return True
 
 
