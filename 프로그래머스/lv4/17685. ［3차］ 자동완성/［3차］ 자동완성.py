@@ -1,40 +1,43 @@
 import collections
 
 
+class TrieNode:
+    
+    def __init__(self):
+        self.children = collections.defaultdict(TrieNode)
+        self.count = 0
+        
+
 class Trie:
     
     def __init__(self):
-        self.children = collections.defaultdict(Trie)
-        self.count = 0
+        self.root = TrieNode()
     
     def insert(self, word: str) -> None:
-        node = self
+        node = self.root
         for char in word:
-            if char not in node.children:
-                node.children[char] = Trie()
             node = node.children[char]
             node.count += 1
-    
+            # print(char, node.count)
+            
     def search(self, word: str) -> int:
-        node = self
-        for idx, char in enumerate(word, 1):
-            if node.children[char].count == 1:
-                break
+        node = self.root
+        count = 0
+        for char in word:
+            if node.count == 1:
+                return count
+            count += 1
             node = node.children[char]
+            
+        return count
 
-        return idx
-    
-    def __str__(self):
-        return str(self.children) + ' ' + str(self.count)
-
-    
 def solution(words):
     answer = 0
-    obj = Trie()
+    trie = Trie()
+    
     for word in words:
-        obj.insert(word)
+        trie.insert(word)
     for word in words:
-        answer += obj.search(word)
-    # debugging
-    # print(obj)
+        answer += trie.search(word)
+        
     return answer

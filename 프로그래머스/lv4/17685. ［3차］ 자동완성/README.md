@@ -1,10 +1,10 @@
 # [level 4] [3차] 자동완성 - 17685 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17685?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17685) 
 
 ### 성능 요약
 
-메모리: 414 MB, 시간: 1959.88 ms
+메모리: 414 MB, 시간: 2172.53 ms
 
 ### 구분
 
