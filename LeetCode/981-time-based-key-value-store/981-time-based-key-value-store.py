@@ -1,4 +1,10 @@
 class TimeMap:
+    '''
+    Time Complexity
+        - Set: O(1) single operation, and total O(n).
+        - Get: O(log n) for a single operation, and total O(m log n).
+    Space Complexity is O(N)
+    '''
     def __init__(self):
         self.time_map = defaultdict(list)
 
@@ -19,9 +25,9 @@ class TimeMap:
                 left = mid + 1
             else:
                 right = mid
-                
-        return "" if right == 0 else array[right - 1][1]
 
+        return "" if not right else array[right - 1][1]
+        
 # Your TimeMap object will be instantiated and called as such:
 # obj = TimeMap()
 # obj.set(key,value,timestamp)
