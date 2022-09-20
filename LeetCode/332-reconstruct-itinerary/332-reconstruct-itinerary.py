@@ -6,13 +6,14 @@ class Solution:
         def dfs(a):
             while graph[a]:
                 dfs(graph[a].pop())
-            answer.append(a)
+            routes.append(a)
         
+        # make a graph
         graph = collections.defaultdict(list)
         for a, b in sorted(tickets, reverse=True):
             graph[a].append(b)
-                    
-        answer = []
+ 
+        routes = []
         dfs("JFK")
         
-        return answer[::-1]
+        return routes[::-1]
