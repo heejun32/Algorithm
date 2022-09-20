@@ -2,6 +2,11 @@ import collections
 
 
 class Solution:
+    '''
+    Time Complexity is O(ElogE) beacause of sorted(E)
+    Space Complexity is O(E)
+
+    '''
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         def dfs(a):
             while graph[a]:
