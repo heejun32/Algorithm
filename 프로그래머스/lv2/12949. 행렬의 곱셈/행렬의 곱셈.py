@@ -1,4 +1,8 @@
 def solution(arr1, arr2):
+    '''
+    Time Complexity is O(L * N * M)
+    Space Complxity is O(L * N)
+    '''    
     l, m, n = len(arr1), len(arr1[0]), len(arr2[0])
     answer = [[0] * n for _ in range(l)]
     
