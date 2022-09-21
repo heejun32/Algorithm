@@ -1,17 +1,13 @@
-class Solution(object):
-    def to_swap(self, n1, n2):
-        return str(n1) + str(n2) < str(n2) + str(n1)
-    
-    def largestNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: str
-        """
-        i = 1 
+class Solution:
+    def largestNumber(self, nums: List[int]) -> str:
+        def to_swap(num1: int, num2: int) -> bool:
+            return str(num1) + str(num2) < str(num2) + str(num1)
+        
+        i = 1
         while i < len(nums):
             j = i
-            while j > 0 and self.to_swap(nums[j - 1], nums[j]):
-                nums[j], nums[j -1] = nums[j - 1], nums[j]
+            while j > 0 and to_swap(nums[j - 1], nums[j]):
+                nums[j - 1], nums[j] = nums[j], nums[j - 1]
                 j -= 1
             i += 1
         
