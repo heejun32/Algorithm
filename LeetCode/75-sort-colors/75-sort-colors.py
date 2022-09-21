@@ -1,7 +1,17 @@
-class Solution(object):
-    def sortColors(self, nums):
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
         """
-        :type nums: List[int]
-        :rtype: None Do not return anything, modify nums in-place instead.
+        Do not return anything, modify nums in-place instead.
         """
-        return nums.sort()
+        red, white, blue = 0, 0, len(nums)
+        
+        while white < blue:
+            if nums[white] > 1:
+                blue -= 1
+                nums[white], nums[blue] = nums[blue], nums[white]
+            elif nums[white] < 1:
+                nums[white], nums[red] = nums[red], nums[white]
+                white += 1
+                red += 1
+            else:
+                white += 1
