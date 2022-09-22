@@ -8,6 +8,7 @@ class Solution:
         dp = [True] + [False] * target
         
         for num in nums:
+            # 정답을 먼저 찾은 경우 남은 nums를 살펴볼 필요가 없다.
             if dp[-1]:
                 break
             for i in range(len(dp) - 1, num - 1, -1):
