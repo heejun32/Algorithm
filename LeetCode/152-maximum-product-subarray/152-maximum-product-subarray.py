@@ -1,4 +1,8 @@
 class Solution:
+    '''
+    Time Complexity is O(N)
+    Space Compexity is O(1)
+    '''
     def maxProduct(self, nums: List[int]) -> int:
         max_pro = min_pro = answer = nums[0]
         
