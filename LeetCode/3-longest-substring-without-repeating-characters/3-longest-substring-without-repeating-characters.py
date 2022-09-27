@@ -1,19 +1,16 @@
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        used = {}
-        max_length = start = 0
-        
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        # Exception
+        if not s:
+            return 0
+
+        used = dict()
+        start = max_lenght = 0
         for idx, char in enumerate(s):
-            
             if char in used and start <= used[char]:
                 start = used[char] + 1
             else:
-                max_length = max(max_length, idx - start + 1)
-            
+                max_lenght = max(max_lenght, idx - start + 1)
             used[char] = idx
-            
-        return max_length
+
+        return max_lenght
