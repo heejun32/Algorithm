@@ -1,5 +1,12 @@
 import collections
 
+'''
+N is accounts.length. M is a total of emails.
+Time Complexity
+- O(MlogM) because of sorted
+Space Complexity is O(N + M). N is accounts.length. M is a total of emails.
+'''
+
 
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
@@ -23,6 +30,7 @@ class Solution:
                 email = accounts[node][i]
                 emails.add(email)
                 
+                # email이라는 edge로 연결되어 있는 이웃 account(노드)를 dfs 수행.
                 for neighbor in email_accounts[email]:
                     dfs(neighbor, emails)
                     
