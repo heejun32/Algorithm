@@ -18,24 +18,45 @@ class Solution:
                 email = account[j]
                 email_accounts[email].append(i)
                 
-        # dfs
-        def dfs(node, emails):
+#         # dfs
+#         def dfs(node, emails):
+#             if visited[node]:
+#                 return None
+            
+#             visited[node] = True
+#             for i in range(1, len(accounts[node])):
+#                 email = accounts[node][i]
+#                 emails.add(email)
+                
+#                 # email이라는 edge로 연결되어 있는 이웃 account(노드)를 dfs 수행.
+#                 for neighbor in email_accounts[email]:
+#                     dfs(neighbor, emails)
+        
+        def bfs(node, emails):
             if visited[node]:
                 return None
-            
             visited[node] = True
-            for i in range(1, len(accounts[node])):
-                email = accounts[node][i]
-                emails.add(email)
+            q = collections.deque([node])
+            
+            while q:
+                cur_node = q.popleft()
                 
-                # email이라는 edge로 연결되어 있는 이웃 account(노드)를 dfs 수행.
-                for neighbor in email_accounts[email]:
-                    dfs(neighbor, emails)
+                for i in range(1, len(accounts[cur_node])):
+                    email = accounts[cur_node][i]
+                    emails.add(email)
                     
+                    for neighbor in email_accounts[email]:
+                        if not visited[neighbor]:
+                            visited[neighbor] = True
+                            q.append(neighbor)
+                    
+            return None
+    
+    
         for i, account in enumerate(accounts):
             if not visited[i]:
                 name, emails = account[0], set()
-                dfs(i, emails)
+                bfs(i, emails)
                 result.append([name] + sorted(emails))
         
         return result
