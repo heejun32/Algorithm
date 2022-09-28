@@ -1,4 +1,8 @@
 class Solution:
+    '''
+    Time Complexity is O(NM) Ni is s.length, M is wordDict.length
+    Space Complexity is O(N)
+    '''
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         dp = [False] * (len(s) + 1)
         dp[0] = True
