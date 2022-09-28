@@ -56,6 +56,7 @@ class Solution:
         for i, account in enumerate(accounts):
             if not visited[i]:
                 name, emails = account[0], set()
+                # dfs(i, emails)
                 bfs(i, emails)
                 result.append([name] + sorted(emails))
         
