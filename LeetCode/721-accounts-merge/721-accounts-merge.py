@@ -6,8 +6,6 @@ Time Complexity
 - O(MlogM) because of sorted
 Space Complexity is O(N + M). N is accounts.length. M is a total of emails.
 '''
-
-
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
         visited = [False] * len(accounts)
