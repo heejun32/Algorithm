@@ -37,8 +37,6 @@ class Solution:
                 return False
         
         # 탐색 시작
-        visited = set()
-        
         for row in range(m):
             for col in range(n):
                 if board[row][col] == word[0] and dfs(row, col, 0):
