@@ -1,3 +1,6 @@
+import collections
+
+
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         def dfs(x, y, k):
@@ -15,8 +18,20 @@ class Solution:
             visited.remove((x, y))
             return False
         
-        
         m, n = len(board), len(board[0])
+        
+        # Exception
+        word_dict = collections.Counter(word)
+        board_dict = collections.Counter()
+        for row in range(m):
+            for col in range(n):
+                board_dict[board[row][col]] += 1
+        
+        for char in word_dict:
+            if char not in board_dict or board_dict[char] < word_dict[char]:
+                return False
+        
+        # 탐색 시작
         visited = set()
         
         for row in range(m):
