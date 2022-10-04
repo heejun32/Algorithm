@@ -2,6 +2,11 @@ import collections
 
 
 class Solution:
+    '''
+    Time Complexity is O(NM!)
+    Space Complexity is O(NM)
+    '''
+    
     def exist(self, board: List[List[str]], word: str) -> bool:
         def dfs(x, y, k):
             # 종료 조건: 탐색 범위를 넘은 경우, word 글자수보다 더 탐색한 경우, 이미 방문한 지점의 경우, 탐색하는 문자가 다른 경우
