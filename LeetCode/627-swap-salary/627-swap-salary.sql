@@ -1,2 +1,2 @@
 # Write your MySQL query statement below
-UPDATE Salary SET sex = REPLACE('fm', sex, '');
+UPDATE Salary SET sex = IF(sex = 'f', 'm', 'f')
