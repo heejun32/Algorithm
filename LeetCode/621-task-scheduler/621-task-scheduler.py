@@ -2,11 +2,16 @@ import collections
 
 
 class Solution:
+    '''
+    Time Complexity is O(N)
+    Space Complexity is O(26) -> O(1)
+    '''
     def leastInterval(self, tasks: List[str], n: int) -> int:
         counter = collections.Counter(tasks)
         result = 0
 
         while True:
+            # 부분 작업 시간
             sub_count = 0
 
             # 개수 순 추출
@@ -20,5 +25,8 @@ class Solution:
 
             if not counter:
                 break
-            result += n + 1 - sub_count 
+
+            # idle 없이 작업이 가능한지 계산
+            result += n + 1 - sub_count
+
         return result
