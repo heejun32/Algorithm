@@ -11,11 +11,10 @@ class Solution:
 
             # 개수 순 추출
             for task, _ in counter.most_common(n + 1):
-                print(task)
                 sub_count += 1
                 result += 1
 
-                counter.subtract(task)
+                counter[task] -= 1
                 # 0 이하인 아이템을 목록에서 완전히 제거
                 counter += collections.Counter()
 
