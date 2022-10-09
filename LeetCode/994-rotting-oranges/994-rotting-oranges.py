@@ -21,9 +21,7 @@ class Solution:
                             fresh_oranges -= 1
                             rotten_oranges.append((dx, dy))
             
-            if fresh_oranges:
-                return -1
-            return time - 1
+            return time - 1 if not fresh_oranges else -1
             
         
         m, n = len(grid), len(grid[0])
