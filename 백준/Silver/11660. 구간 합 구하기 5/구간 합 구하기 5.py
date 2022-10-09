@@ -1,6 +1,8 @@
 import sys
-
-
+'''
+Time Complexity is O(N^2)
+Space Complexity is O(N^2)
+'''
 def solution() -> None:
     N, M = map(int, sys.stdin.readline().split())
     TABLE = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
