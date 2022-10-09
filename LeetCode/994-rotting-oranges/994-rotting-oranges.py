@@ -10,7 +10,6 @@ class Solution:
             while rotten_oranges:
                 
                 # search the same level during 1 time
-                time += 1
                 for _ in range(len(rotten_oranges)):                
                     x, y = rotten_oranges.popleft()
                     
@@ -21,7 +20,10 @@ class Solution:
                             fresh_oranges -= 1
                             rotten_oranges.append((dx, dy))
             
-            return time - 1 if not fresh_oranges else -1
+                if rotten_oranges:
+                    time += 1
+                
+            return time if not fresh_oranges else -1
             
         
         m, n = len(grid), len(grid[0])
