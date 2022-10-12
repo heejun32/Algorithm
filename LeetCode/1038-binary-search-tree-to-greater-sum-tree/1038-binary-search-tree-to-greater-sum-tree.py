@@ -5,7 +5,9 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    val = 0
+    def __init__(self):
+        self.val = 0
+
     def bstToGst(self, root: TreeNode) -> TreeNode:
         if root:
             self.bstToGst(root.right)
@@ -14,3 +16,4 @@ class Solution:
             self.bstToGst(root.left)
             
         return root
+        
