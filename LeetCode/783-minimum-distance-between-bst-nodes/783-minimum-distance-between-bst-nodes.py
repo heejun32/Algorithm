@@ -7,11 +7,11 @@
 class Solution:
     prev = float("-inf")
     result = float("inf")
-    
+
     def minDiffInBST(self, root: Optional[TreeNode]) -> int:
         if root.left:
             self.minDiffInBST(root.left)
-        
+            
         self.result = min(self.result, root.val - self.prev)
         self.prev = root.val
         
