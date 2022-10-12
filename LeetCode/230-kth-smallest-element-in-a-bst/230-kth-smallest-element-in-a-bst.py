@@ -5,20 +5,21 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-        
+    '''
+    Time Complexity is O(N)
+    Space Complexity is O(N)
+    '''
+    def __init__(self):
+        self.array = list()
+    
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        stack = []
-        
-        while root or stack:
-            while root:
-                stack.append(root)
-                root = root.left
+        def inorder(node):
+            if not node:
+                return None
             
-            root = stack.pop()
-            k -= 1
-            if k == 0:
-                return root.val
-            root = root.right
+            inorder(node.left)
+            self.array.append(node.val)
+            inorder(node.right)
         
-    # 스택으로 구현하기, BST 복습
-    #+ 약점문제 풀기
+        inorder(root)
+        return self.array[k - 1]
