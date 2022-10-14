@@ -2,6 +2,12 @@ import collections
 
 
 class Solution:
+    '''
+    Time Complexity is O(N * M  * 26 * M) -> O(NM^2)
+    - N is wordList.lenght
+    - M is beginWord.lenght
+    Space Complexity is O(N)
+    '''
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         # 검색 속도 향상을 위해
         wordList = set(wordList)
